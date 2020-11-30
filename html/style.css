@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login_content {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-areas: ". img form .";
+}
+
+#login_img {
+  width: 100%;
+  height: 100%;
+  padding: 2vw;
+  grid-area: img;
+}
+
+#login_form {
+  grid-area: form;
+  grid-template-rows: max-content 1fr;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  grid-gap: 5vh;
+}
